@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twilio Client Quickstart</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div id="controls">
+    <div id="info">
+        <p class="instructions">Twilio Client</p>
+        <div id="client-name"></div>
+
+    </div>
+    <div id="call-controls">
+        <p class="instructions">Choose a Region:</p>
+        <select id="config" onchange="changeConfig()">
+            <option value="gll">Global (gll)</option>
+            <option value="au1">Australia (au1)</option>
+            <option value="br1">Brazil (br1)</option>
+            <option value="ie1">Ireland (ie1)</option>
+            <option value="de1">Frankfurt (de1)</option>
+            <option value="jp1">Japan (jp1)</option>
+            <option value="sg1">Singapore (sg1)</option>
+            <option value="us1">US East Coast (us1)</option>
+
+        </select>
+        <p class="instructions">Make a Call:</p>
+        <input id="phone-number" type="text" placeholder="Enter a phone # or client name" />
+        <button id="button-call">Call</button>
+        <button id="button-hangup">Hangup</button>
+    </div>
+    <div id="log"></div>
+</div>
+
+<script type="text/javascript" src="//media.twiliocdn.com/sdk/js/client/v1.6/twilio.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="quickstart.js"></script>
+</body>
+</html>
